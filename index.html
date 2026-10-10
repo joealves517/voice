@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Voice Studio - Teleprompter & Voice Recorder</title>
-  <meta name="description" content="Teleprompter voice recorder for Geo Trivia X video dubbing. Step-by-step recording and one-click ZIP voice pack export." />
+  <title>Voice Studio</title>
+  <meta name="description" content="Teleprompter voice recorder for Geo Trivia X video dubbing." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,23 +22,16 @@
         <div class="brand-icon">
           <i data-lucide="mic" style="color: white; width: 22px; height: 22px;"></i>
         </div>
-        <div>
-          <span class="brand-title">Voice Studio</span>
-          <span class="brand-badge">Teleprompter</span>
-        </div>
+        <span class="brand-title">Voice Studio</span>
       </div>
 
       <div class="header-actions">
         <select id="templateSelector" class="template-select">
-          <option value="geo-ghost-border">Geo Ghost Border (11 lines)</option>
-          <option value="geo-zoom-out-country">Geo Zoom Out Country (10 lines)</option>
-          <option value="geo-flag-puzzle">Geo Flag Puzzle (10 lines)</option>
-          <option value="custom">Custom Script</option>
+          <option value="geo-ghost-border">Ghost Border</option>
+          <option value="geo-zoom-out-country">Zoom Out</option>
+          <option value="geo-flag-puzzle">Flag Puzzle</option>
+          <option value="custom">Custom</option>
         </select>
-
-        <button id="viewToggleBtn" class="view-toggle-btn" title="Toggle List / Prompter view">
-          <i id="viewToggleIcon" data-lucide="list" style="width: 18px; height: 18px;"></i>
-        </button>
       </div>
     </div>
   </header>
@@ -48,10 +41,10 @@
     <!-- Progress Indicator -->
     <div class="progress-container">
       <div class="progress-header">
-        <span id="templateNameDisplay">Geo Ghost Border</span>
+        <span id="templateNameDisplay">Ghost Border</span>
         <div class="progress-stats">
           <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-          <span id="progressText">Recorded: 0 / 11 lines</span>
+          <span id="progressText">0 / 11</span>
         </div>
       </div>
       <div class="progress-track">
@@ -66,7 +59,7 @@
           <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
           <span>Previous</span>
         </button>
-        <span id="stepIndicator" class="step-indicator">Line 1 of 11</span>
+        <span id="stepIndicator" class="step-indicator">1 / 11</span>
         <button id="nextBtn" class="nav-btn">
           <span>Next</span>
           <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
@@ -75,20 +68,12 @@
 
       <!-- Prompter Card -->
       <div class="teleprompter-card">
-        <div class="prompter-badge-row">
-          <span id="prompterBadge" class="prompter-badge q">QUESTION Q0</span>
-          <span id="voiceHint" class="voice-hint">
-            <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
-            <span id="voiceHintText">Curious, challenging inflection</span>
-          </span>
-        </div>
-
         <div id="prompterText" class="prompter-text">
           Guess the country just from its border shape, first round.
         </div>
 
         <div id="filenameHint" style="font-size: 0.72rem; color: var(--text-muted); text-align: center;">
-          Output: <code id="filenameCode" style="color: var(--accent-blue);">geo-ghost-border_q0.mp3</code>
+          <code id="filenameCode" style="color: var(--accent-blue);">geo-ghost-border_q0.mp3</code>
         </div>
       </div>
 
@@ -117,22 +102,17 @@
         </div>
       </div>
     </div>
-
-    <!-- List Overview View (Hidden by default) -->
-    <div id="listView" class="list-container" style="display: none;">
-      <!-- Populated dynamically via JS -->
-    </div>
   </main>
 
   <!-- Bottom Sticky Action Bar -->
   <footer class="bottom-bar">
     <div class="bottom-container">
       <button id="downloadZipBtn" class="download-zip-btn" disabled>
-        <i data-lucide="archive" style="width: 18px; height: 18px;"></i>
-        <span id="downloadZipBtnText">Download Voice Pack (.zip)</span>
+        <i data-lucide="download" style="width: 18px; height: 18px;"></i>
+        <span id="downloadZipBtnText">Download</span>
       </button>
 
-      <button id="clearAllBtn" class="clear-all-btn" title="Reset recordings for this template">
+      <button id="clearAllBtn" class="clear-all-btn" title="Reset recordings">
         <i data-lucide="trash-2" style="width: 16px; height: 16px;"></i>
       </button>
     </div>

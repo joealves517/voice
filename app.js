@@ -1,296 +1,194 @@
-// ─── Templates Registry (100% English) ───
+// ─── Templates Registry ───
 const TEMPLATES = {
   "geo-ghost-border": {
-    name: "Geo Ghost Border",
+    name: "Ghost Border",
     prefix: "geo-ghost-border",
     items: [
       {
         key: "intro",
-        type: "intro",
-        badge: "INTRO HOOK",
-        hint: "High energy, enthusiastic opener",
         filename: "geo-ghost-border_intro.mp3",
         text: "Hey guys, welcome back. We have a bit of trivia for you today and I just want to see how well you know the places around the world.",
       },
       {
         key: "q0",
-        type: "q",
-        badge: "QUESTION 1 (TOGO)",
-        hint: "Curious, challenging inflection",
         filename: "geo-ghost-border_q0.mp3",
         text: "Guess the country just from its border shape, first round.",
       },
       {
         key: "a0",
-        type: "a",
-        badge: "ANSWER 1 (TOGO)",
-        hint: "Punchy, confident reveal",
         filename: "geo-ghost-border_a0.mp3",
         text: "Yup that's Togo, just fifty kilometers wide.",
       },
       {
         key: "q1",
-        type: "q",
-        badge: "QUESTION 2 (MALAWI)",
-        hint: "Upbeat, build momentum",
         filename: "geo-ghost-border_q1.mp3",
         text: "Next round, can you spot this long curved country?",
       },
       {
         key: "a1",
-        type: "a",
-        badge: "ANSWER 2 (MALAWI)",
-        hint: "Warm, engaging delivery",
         filename: "geo-ghost-border_a1.mp3",
         text: "That's Malawi, known as the Warm Heart of Africa.",
       },
       {
         key: "q2",
-        type: "q",
-        badge: "QUESTION 3 (DJIBOUTI)",
-        hint: "Intriguing tone, shift focus north",
         filename: "geo-ghost-border_q2.mp3",
         text: "Moving north, which Horn of Africa nation is this?",
       },
       {
         key: "a2",
-        type: "a",
-        badge: "ANSWER 3 (DJIBOUTI)",
-        hint: "Crisp, authoritative reveal",
         filename: "geo-ghost-border_a2.mp3",
         text: "You're looking at Djibouti, guarding the Red Sea.",
       },
       {
         key: "q3",
-        type: "q",
-        badge: "QUESTION 4 (NAMIBIA)",
-        hint: "Build anticipation, tough round",
         filename: "geo-ghost-border_q3.mp3",
         text: "Getting tougher now, name this nation.",
       },
       {
         key: "a3",
-        type: "a",
-        badge: "ANSWER 4 (NAMIBIA)",
-        hint: "Awe-inspiring, grand delivery",
         filename: "geo-ghost-border_a3.mp3",
         text: "It's Namibia, home to Earth's oldest desert.",
       },
       {
         key: "q4",
-        type: "q",
-        badge: "QUESTION 5 (TIMOR-LESTE)",
-        hint: "Ultimate mystery, peak suspense",
         filename: "geo-ghost-border_q4.mp3",
         text: "Probably the hardest one, can you spot this country?",
       },
       {
         key: "a4",
-        type: "a",
-        badge: "CALL TO ACTION",
-        hint: "Warm, energetic sign-off",
         filename: "geo-ghost-border_a4.mp3",
         text: "Drop your answer in the comments below and follow for more!",
       },
     ],
   },
   "geo-zoom-out-country": {
-    name: "Geo Zoom Out Country",
+    name: "Zoom Out",
     prefix: "geo-zoom-out-country",
     items: [
       {
         key: "q0",
-        type: "q",
-        badge: "QUESTION 1 (SRI LANKA)",
-        hint: "Rhythmic delivery leading into countdown",
         filename: "geo-zoom-out-country_q0.mp3",
         text: "Name this country in,",
       },
       {
         key: "a0",
-        type: "a",
-        badge: "ANSWER 1 (SRI LANKA)",
-        hint: "Lively, lyrical reveal",
         filename: "geo-zoom-out-country_a0.mp3",
         text: "Sri Lanka, the pearl of the Indian Ocean.",
       },
       {
         key: "q1",
-        type: "q",
-        badge: "QUESTION 2 (ICELAND)",
-        hint: "Crisp and punchy",
         filename: "geo-zoom-out-country_q1.mp3",
         text: "Name this nation in,",
       },
       {
         key: "a1",
-        type: "a",
-        badge: "ANSWER 2 (ICELAND)",
-        hint: "Mysterious, dramatic tone",
         filename: "geo-zoom-out-country_a1.mp3",
         text: "Iceland, isolated in the North Atlantic.",
       },
       {
         key: "q2",
-        type: "q",
-        badge: "QUESTION 3 (OMAN)",
-        hint: "Upbeat and energetic",
         filename: "geo-zoom-out-country_q2.mp3",
         text: "Spot this country in,",
       },
       {
         key: "a2",
-        type: "a",
-        badge: "ANSWER 3 (OMAN)",
-        hint: "Bold and strong",
         filename: "geo-zoom-out-country_a2.mp3",
         text: "Oman, guarding the Arabian Sea.",
       },
       {
         key: "q3",
-        type: "q",
-        badge: "QUESTION 4 (PARAGUAY)",
-        hint: "Clear emphasis on landlocked hint",
         filename: "geo-zoom-out-country_q3.mp3",
         text: "Name this landlocked country in,",
       },
       {
         key: "a3",
-        type: "a",
-        badge: "ANSWER 4 (PARAGUAY)",
-        hint: "Warm and friendly",
         filename: "geo-zoom-out-country_a3.mp3",
         text: "Paraguay, right in the heart of South America.",
       },
       {
         key: "q4",
-        type: "q",
-        badge: "QUESTION 5 (ERITREA - MYSTERY)",
-        hint: "Dramatic mystery countdown",
         filename: "geo-zoom-out-country_q4.mp3",
         text: "Final mystery round, name this country in,",
       },
       {
         key: "a4",
-        type: "a",
-        badge: "CALL TO ACTION",
-        hint: "Encourage viewers to comment",
         filename: "geo-zoom-out-country_a4.mp3",
         text: "Drop your answer in the comments below!",
       },
     ],
   },
   "geo-flag-puzzle": {
-    name: "Geo Flag Puzzle",
+    name: "Flag Puzzle",
     prefix: "geo-flag-puzzle",
     items: [
       {
         key: "q0",
-        type: "q",
-        badge: "QUESTION 1 (DOMINICA)",
-        hint: "Vivid, visual delivery",
         filename: "geo-flag-puzzle_q0.mp3",
         text: "Triple colored stripes across a rich green field. Can you identify this island?",
       },
       {
         key: "a0",
-        type: "a",
-        badge: "ANSWER 1 (DOMINICA)",
-        hint: "Enthusiastic and clear",
         filename: "geo-flag-puzzle_a0.mp3",
         text: "Dominica, known for the rare purple Sisserou parrot.",
       },
       {
         key: "q1",
-        type: "q",
-        badge: "QUESTION 2 (KAZAKHSTAN)",
-        hint: "Grand and majestic",
         filename: "geo-flag-puzzle_q1.mp3",
         text: "A distinctive gold ornamental pattern against sky blue. Name this giant nation!",
       },
       {
         key: "a1",
-        type: "a",
-        badge: "ANSWER 2 (KAZAKHSTAN)",
-        hint: "Proud and inspiring",
         filename: "geo-flag-puzzle_a1.mp3",
         text: "Kazakhstan, with the soaring steppe eagle beneath the sun.",
       },
       {
         key: "q2",
-        type: "q",
-        badge: "QUESTION 3 (SAINT VINCENT)",
-        hint: "Curious and lighthearted",
         filename: "geo-flag-puzzle_q2.mp3",
         text: "Green, yellow, and blue stripes with a white diamond. Which country is this?",
       },
       {
         key: "a2",
-        type: "a",
-        badge: "ANSWER 3 (SAINT VINCENT)",
-        hint: "Smooth and relaxed",
         filename: "geo-flag-puzzle_a2.mp3",
         text: "Saint Vincent and the Grenadines, nestled in the Caribbean.",
       },
       {
         key: "q3",
-        type: "q",
-        badge: "QUESTION 4 (WALES)",
-        hint: "Bold delivery highlighting the dragon",
         filename: "geo-flag-puzzle_q3.mp3",
         text: "A fierce red dragon emblazoned on green and white. Spot this nation!",
       },
       {
         key: "a3",
-        type: "a",
-        badge: "ANSWER 4 (WALES)",
-        hint: "Legendary and proud",
         filename: "geo-flag-puzzle_a3.mp3",
         text: "Wales, famous for its ancient castles and rugged coastline.",
       },
       {
         key: "q4",
-        type: "q",
-        badge: "QUESTION 5 (MYSTERY FLAG)",
-        hint: "Challenging mystery hook",
         filename: "geo-flag-puzzle_q4.mp3",
         text: "Mystery flag round! Can you identify this national symbol?",
       },
       {
         key: "a4",
-        type: "a",
-        badge: "CALL TO ACTION",
-        hint: "Spur comments and engagement",
         filename: "geo-flag-puzzle_a4.mp3",
         text: "Drop your guess in the comments below!",
       },
     ],
   },
   "custom": {
-    name: "Custom Script",
+    name: "Custom",
     prefix: "custom-voice",
     items: [
       {
         key: "q0",
-        type: "q",
-        badge: "LINE 1",
-        hint: "Record your opening line",
         filename: "custom-voice_01.mp3",
         text: "Type or read your first line here...",
       },
       {
         key: "q1",
-        type: "q",
-        badge: "LINE 2",
-        hint: "Record your second line",
         filename: "custom-voice_02.mp3",
         text: "Type or read your second line here...",
       },
       {
         key: "q2",
-        type: "q",
-        badge: "LINE 3",
-        hint: "Record your third line",
         filename: "custom-voice_03.mp3",
         text: "Type or read your third line here...",
       },
@@ -326,18 +224,6 @@ async function saveClip(templateId, key, blob, duration) {
     store.put({ id, templateId, key, blob, duration, updatedAt: Date.now() });
     tx.oncomplete = () => resolve();
     tx.onerror = () => reject(tx.error);
-  });
-}
-
-async function getClip(templateId, key) {
-  const db = await openDB();
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(STORE_NAME, "readonly");
-    const store = tx.objectStore(STORE_NAME);
-    const id = `${templateId}_${key}`;
-    const req = store.get(id);
-    req.onsuccess = () => resolve(req.result || null);
-    req.onerror = () => reject(req.error);
   });
 }
 
@@ -380,7 +266,7 @@ async function clearTemplateClips(templateId) {
   });
 }
 
-// ─── Audio Recording Engine & MP3 Encoder ───
+// ─── Recording State ───
 let mediaStream = null;
 let audioContext = null;
 let audioInput = null;
@@ -397,15 +283,9 @@ const templateSelector = document.getElementById("templateSelector");
 const templateNameDisplay = document.getElementById("templateNameDisplay");
 const progressText = document.getElementById("progressText");
 const progressFill = document.getElementById("progressFill");
-const viewToggleBtn = document.getElementById("viewToggleBtn");
-const viewToggleIcon = document.getElementById("viewToggleIcon");
-const prompterView = document.getElementById("prompterView");
-const listView = document.getElementById("listView");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const stepIndicator = document.getElementById("stepIndicator");
-const prompterBadge = document.getElementById("prompterBadge");
-const voiceHintText = document.getElementById("voiceHintText");
 const prompterText = document.getElementById("prompterText");
 const filenameCode = document.getElementById("filenameCode");
 const waveformCanvas = document.getElementById("waveformCanvas");
@@ -424,21 +304,20 @@ const toastContainer = document.getElementById("toastContainer");
 // App State
 let currentTemplateId = "geo-ghost-border";
 let currentIndex = 0;
-let cachedClips = {}; // key -> { blob, duration }
-let activeView = "prompter"; // "prompter" | "list"
+let cachedClips = {};
 
 // ─── Toast System ───
 function showToast(msg, icon = "check") {
   const el = document.createElement("div");
   el.className = "toast";
-  el.innerHTML = `<i data-lucide="${icon}" style="width: 16px; height: 16px;"></i><span>${msg}</span>`;
+  el.innerHTML = `<i data-lucide="${icon}" style="width: 15px; height: 15px;"></i><span>${msg}</span>`;
   toastContainer.appendChild(el);
   lucide.createIcons({ root: el });
   setTimeout(() => {
     el.style.opacity = "0";
-    el.style.transition = "opacity 0.3s";
-    setTimeout(() => el.remove(), 300);
-  }, 2500);
+    el.style.transition = "opacity 0.25s";
+    setTimeout(() => el.remove(), 250);
+  }, 2200);
 }
 
 // ─── Audio Recording Functions ───
@@ -488,11 +367,10 @@ async function startRecording() {
       timerDisplay.textContent = `${mins}:${secs}`;
     }, 100);
 
-    // Start Visualizer
     drawWaveform();
   } catch (err) {
     console.error("Mic Access Error:", err);
-    showToast("Microphone access denied. Please grant mic permissions!", "alert-circle");
+    showToast("Please grant microphone permissions!", "alert-circle");
   }
 }
 
@@ -510,7 +388,6 @@ async function stopRecording() {
 
   const durationSec = (Date.now() - recordStartTime) / 1000;
 
-  // Stop MediaStream Tracks
   if (mediaStream) {
     mediaStream.getTracks().forEach((track) => track.stop());
   }
@@ -519,10 +396,8 @@ async function stopRecording() {
   if (analyserNode) analyserNode.disconnect();
   if (audioContext && audioContext.state !== "closed") audioContext.close();
 
-  // Reset Canvas
   clearWaveform();
 
-  // Flatten PCM Float32
   let totalLength = 0;
   for (const chunk of pcmChunks) totalLength += chunk.length;
   const mergedFloat = new Float32Array(totalLength);
@@ -532,21 +407,19 @@ async function stopRecording() {
     offset += chunk.length;
   }
 
-  // Encode to MP3 using lamejs
   let audioBlob;
   try {
     audioBlob = encodePCMToMp3(mergedFloat, 44100);
   } catch (err) {
-    console.warn("lamejs encoding fallback to WAV:", err);
+    console.warn("lamejs fallback to WAV:", err);
     audioBlob = encodePCMToWav(mergedFloat, 44100);
   }
 
-  // Save to IndexedDB
   const currentItem = getCurrentItem();
   await saveClip(currentTemplateId, currentItem.key, audioBlob, durationSec);
   cachedClips[currentItem.key] = { blob: audioBlob, duration: durationSec };
 
-  showToast(`Saved "${currentItem.filename}" (${durationSec.toFixed(1)}s)!`);
+  showToast(`Saved (${durationSec.toFixed(1)}s)`);
   updateUI();
 }
 
@@ -555,14 +428,13 @@ function encodePCMToMp3(floatSamples, sampleRate) {
     throw new Error("lamejs not loaded");
   }
 
-  // Convert Float32 [-1.0, 1.0] to Int16 [-32768, 32767]
   const int16Samples = new Int16Array(floatSamples.length);
   for (let i = 0; i < floatSamples.length; i++) {
     const s = Math.max(-1, Math.min(1, floatSamples[i]));
     int16Samples[i] = s < 0 ? s * 0x8000 : s * 0x7fff;
   }
 
-  const mp3encoder = new lamejs.Mp3Encoder(1, sampleRate, 160); // 1 channel, 160 kbps
+  const mp3encoder = new lamejs.Mp3Encoder(1, sampleRate, 160);
   const mp3Data = [];
   const chunkSize = 1152;
 
@@ -593,8 +465,8 @@ function encodePCMToWav(floatSamples, sampleRate) {
   writeString(8, "WAVE");
   writeString(12, "fmt ");
   view.setUint32(16, 16, true);
-  view.setUint16(20, 1, true); // PCM
-  view.setUint16(22, 1, true); // Mono
+  view.setUint16(20, 1, true);
+  view.setUint16(22, 1, true);
   view.setUint32(24, sampleRate, true);
   view.setUint32(28, sampleRate * 2, true);
   view.setUint16(32, 2, true);
@@ -660,7 +532,7 @@ function clearWaveform() {
   ctx.stroke();
 }
 
-// ─── UI Rendering & State ───
+// ─── State Helpers ───
 function getCurrentTemplate() {
   return TEMPLATES[currentTemplateId] || TEMPLATES["geo-ghost-border"];
 }
@@ -686,18 +558,15 @@ function updateUI() {
 
   // Header & Progress
   templateNameDisplay.textContent = tmpl.name;
-  progressText.textContent = `Recorded: ${recordedCount} / ${totalCount} lines`;
+  progressText.textContent = `${recordedCount} / ${totalCount}`;
   const pct = Math.round((recordedCount / totalCount) * 100);
   progressFill.style.width = `${pct}%`;
 
-  // Prompter Step & Badge
-  stepIndicator.textContent = `Line ${currentIndex + 1} of ${totalCount}`;
+  // Prompter Nav
+  stepIndicator.textContent = `${currentIndex + 1} / ${totalCount}`;
   prevBtn.disabled = currentIndex === 0;
   nextBtn.disabled = currentIndex === totalCount - 1;
 
-  prompterBadge.className = `prompter-badge ${item.type}`;
-  prompterBadge.textContent = item.badge;
-  voiceHintText.textContent = item.hint;
   prompterText.textContent = item.text;
   filenameCode.textContent = item.filename;
 
@@ -712,84 +581,16 @@ function updateUI() {
     audioPreviewPlayer.removeAttribute("src");
   }
 
-  // Download Zip Button
+  // Clean Download Button text
   if (recordedCount > 0) {
     downloadZipBtn.disabled = false;
-    downloadZipBtnText.textContent = `Download Voice Pack (${recordedCount} clips .zip)`;
+    downloadZipBtnText.textContent = `Download (${recordedCount} ${recordedCount === 1 ? "clip" : "clips"})`;
   } else {
     downloadZipBtn.disabled = true;
-    downloadZipBtnText.textContent = "Download Voice Pack (.zip)";
+    downloadZipBtnText.textContent = "Download";
   }
 
-  // Render List View if open
-  renderListView();
   lucide.createIcons();
-}
-
-function renderListView() {
-  const tmpl = getCurrentTemplate();
-  listView.innerHTML = "";
-
-  tmpl.items.forEach((it, idx) => {
-    const isRecorded = Boolean(cachedClips[it.key]);
-    const duration = cachedClips[it.key]?.duration;
-    const durStr = duration ? `(${duration.toFixed(1)}s)` : "";
-
-    const el = document.createElement("div");
-    el.className = `list-item ${idx === currentIndex ? "active" : ""}`;
-    el.innerHTML = `
-      <div class="list-item-left">
-        <div class="status-dot ${isRecorded ? "recorded" : ""}"></div>
-        <div class="list-item-text">
-          <div class="list-item-title">
-            <span>${it.badge}</span>
-            <code style="font-size: 0.72rem; color: var(--text-muted);">${it.filename}</code>
-            <span style="font-size: 0.72rem; color: var(--accent-emerald);">${durStr}</span>
-          </div>
-          <div class="list-item-desc">${it.text}</div>
-        </div>
-      </div>
-      <div class="clip-actions">
-        ${
-          isRecorded
-            ? `<button class="icon-btn" title="Listen back" onclick="playClip('${it.key}')">
-                <i data-lucide="play" style="width: 15px; height: 15px;"></i>
-               </button>`
-            : ""
-        }
-      </div>
-    `;
-    el.addEventListener("click", (e) => {
-      if (e.target.closest("button")) return;
-      currentIndex = idx;
-      setView("prompter");
-    });
-    listView.appendChild(el);
-  });
-}
-
-window.playClip = function (key) {
-  const rec = cachedClips[key];
-  if (!rec) return;
-  const audio = new Audio(URL.createObjectURL(rec.blob));
-  audio.play();
-};
-
-function setView(view) {
-  activeView = view;
-  if (view === "prompter") {
-    prompterView.style.display = "flex";
-    listView.style.display = "none";
-    viewToggleBtn.classList.remove("active");
-    viewToggleIcon.setAttribute("data-lucide", "list");
-  } else {
-    prompterView.style.display = "none";
-    listView.style.display = "flex";
-    viewToggleBtn.classList.add("active");
-    viewToggleIcon.setAttribute("data-lucide", "tv");
-  }
-  lucide.createIcons();
-  updateUI();
 }
 
 // ─── Export ZIP (JSZip) ───
@@ -797,27 +598,21 @@ async function exportZip() {
   const tmpl = getCurrentTemplate();
   const recordedItems = tmpl.items.filter((it) => cachedClips[it.key]);
 
-  if (recordedItems.length === 0) {
-    showToast("No recordings available to download yet!", "alert-circle");
-    return;
-  }
+  if (recordedItems.length === 0) return;
 
-  showToast("Packaging ZIP voice archive...", "loader");
+  showToast("Packaging ZIP...", "loader");
   const zip = new JSZip();
 
-  // Add all audio files
   for (const it of recordedItems) {
     const clip = cachedClips[it.key];
     zip.file(it.filename, clip.blob);
   }
 
-  // Add manifest.json for reference
   const manifest = {
     template: tmpl.name,
     prefix: tmpl.prefix,
     exportedAt: new Date().toISOString(),
     totalClips: recordedItems.length,
-    instructions: "Extract these .mp3 files directly into: Geo Trivia X/remotion/public/audio/tts/",
     clips: recordedItems.map((it) => ({
       key: it.key,
       filename: it.filename,
@@ -831,13 +626,13 @@ async function exportZip() {
   const downloadUrl = URL.createObjectURL(content);
   const a = document.createElement("a");
   a.href = downloadUrl;
-  a.download = `${tmpl.prefix}-voice-package.zip`;
+  a.download = `${tmpl.prefix}-voice.zip`;
   document.body.appendChild(a);
   a.click();
   a.remove();
   URL.revokeObjectURL(downloadUrl);
 
-  showToast(`Voice pack downloaded (${recordedItems.length} clips)!`, "check-circle-2");
+  showToast(`Downloaded ${recordedItems.length} clips!`, "check-circle-2");
 }
 
 // ─── Event Listeners ───
@@ -861,10 +656,6 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
-viewToggleBtn.addEventListener("click", () => {
-  setView(activeView === "prompter" ? "list" : "prompter");
-});
-
 templateSelector.addEventListener("change", async (e) => {
   currentTemplateId = e.target.value;
   currentIndex = 0;
@@ -876,7 +667,7 @@ retakeBtn.addEventListener("click", async () => {
   const item = getCurrentItem();
   await deleteClip(currentTemplateId, item.key);
   delete cachedClips[item.key];
-  showToast(`Cleared recording for ${item.badge}. Ready to re-record!`);
+  showToast("Cleared take. Ready to re-record!");
   updateUI();
 });
 
@@ -896,15 +687,14 @@ downloadZipBtn.addEventListener("click", exportZip);
 
 clearAllBtn.addEventListener("click", async () => {
   const tmpl = getCurrentTemplate();
-  if (confirm(`Are you sure you want to reset ALL recordings for "${tmpl.name}"?`)) {
+  if (confirm(`Reset all recordings for "${tmpl.name}"?`)) {
     await clearTemplateClips(currentTemplateId);
     cachedClips = {};
-    showToast(`All recordings cleared for "${tmpl.name}"`);
+    showToast("Recordings reset");
     updateUI();
   }
 });
 
-// Spacebar & Arrow Shortcuts
 document.addEventListener("keydown", (e) => {
   if (e.code === "Space" && e.target.tagName !== "INPUT" && e.target.tagName !== "TEXTAREA") {
     e.preventDefault();
@@ -917,7 +707,6 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// Canvas Resize
 function setupCanvas() {
   const rect = waveformCanvas.getBoundingClientRect();
   waveformCanvas.width = rect.width * window.devicePixelRatio;
@@ -925,7 +714,6 @@ function setupCanvas() {
   clearWaveform();
 }
 
-// ─── Initialization ───
 async function init() {
   setupCanvas();
   window.addEventListener("resize", setupCanvas);
