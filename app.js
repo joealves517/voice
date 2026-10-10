@@ -1,4 +1,4 @@
-// ─── Templates Registry ───
+// ─── Templates Registry (100% English) ───
 const TEMPLATES = {
   "geo-ghost-border": {
     name: "Geo Ghost Border",
@@ -7,88 +7,88 @@ const TEMPLATES = {
       {
         key: "intro",
         type: "intro",
-        badge: "LỜI DẪN (INTRO)",
-        hint: "Đọc hào hứng, mở đầu video lôi cuốn",
+        badge: "INTRO HOOK",
+        hint: "High energy, enthusiastic opener",
         filename: "geo-ghost-border_intro.mp3",
         text: "Hey guys, welcome back. We have a bit of trivia for you today and I just want to see how well you know the places around the world.",
       },
       {
         key: "q0",
         type: "q",
-        badge: "CÂU HỎI Q0 (TOGO)",
-        hint: "Đọc tò mò, thách đố người xem",
+        badge: "QUESTION 1 (TOGO)",
+        hint: "Curious, challenging inflection",
         filename: "geo-ghost-border_q0.mp3",
         text: "Guess the country just from its border shape, first round.",
       },
       {
         key: "a0",
         type: "a",
-        badge: "ĐÁP ÁN A0 (TOGO)",
-        hint: "Đọc khẳng định, giải tỏa bất ngờ",
+        badge: "ANSWER 1 (TOGO)",
+        hint: "Punchy, confident reveal",
         filename: "geo-ghost-border_a0.mp3",
         text: "Yup that's Togo, just fifty kilometers wide.",
       },
       {
         key: "q1",
         type: "q",
-        badge: "CÂU HỎI Q1 (MALAWI)",
-        hint: "Tăng nhịp điệu hào hứng",
+        badge: "QUESTION 2 (MALAWI)",
+        hint: "Upbeat, build momentum",
         filename: "geo-ghost-border_q1.mp3",
         text: "Next round, can you spot this long curved country?",
       },
       {
         key: "a1",
         type: "a",
-        badge: "ĐÁP ÁN A1 (MALAWI)",
-        hint: "Ấm áp, chia sẻ sự thật thú vị",
+        badge: "ANSWER 2 (MALAWI)",
+        hint: "Warm, engaging delivery",
         filename: "geo-ghost-border_a1.mp3",
         text: "That's Malawi, known as the Warm Heart of Africa.",
       },
       {
         key: "q2",
         type: "q",
-        badge: "CÂU HỎI Q2 (DJIBOUTI)",
-        hint: "Đọc thách đố, chuyển cảnh phương Bắc",
+        badge: "QUESTION 3 (DJIBOUTI)",
+        hint: "Intriguing tone, shift focus north",
         filename: "geo-ghost-border_q2.mp3",
         text: "Moving north, which Horn of Africa nation is this?",
       },
       {
         key: "a2",
         type: "a",
-        badge: "ĐÁP ÁN A2 (DJIBOUTI)",
-        hint: "Dứt khoát, ấn tượng",
+        badge: "ANSWER 3 (DJIBOUTI)",
+        hint: "Crisp, authoritative reveal",
         filename: "geo-ghost-border_a2.mp3",
         text: "You're looking at Djibouti, guarding the Red Sea.",
       },
       {
         key: "q3",
         type: "q",
-        badge: "CÂU HỎI Q3 (NAMIBIA)",
-        hint: "Tạo cảm giác độ khó đang tăng dần",
+        badge: "QUESTION 4 (NAMIBIA)",
+        hint: "Build anticipation, tough round",
         filename: "geo-ghost-border_q3.mp3",
         text: "Getting tougher now, name this nation.",
       },
       {
         key: "a3",
         type: "a",
-        badge: "ĐÁP ÁN A3 (NAMIBIA)",
-        hint: "Ngạc nhiên, hùng vĩ",
+        badge: "ANSWER 4 (NAMIBIA)",
+        hint: "Awe-inspiring, grand delivery",
         filename: "geo-ghost-border_a3.mp3",
         text: "It's Namibia, home to Earth's oldest desert.",
       },
       {
         key: "q4",
         type: "q",
-        badge: "CÂU HỎI Q4 (TIMOR-LESTE)",
-        hint: "Đỉnh điểm kịch tính, câu hỏi bí ẩn",
+        badge: "QUESTION 5 (TIMOR-LESTE)",
+        hint: "Ultimate mystery, peak suspense",
         filename: "geo-ghost-border_q4.mp3",
         text: "Probably the hardest one, can you spot this country?",
       },
       {
         key: "a4",
         type: "a",
-        badge: "KẾT VIDEO A4 (CALL TO ACTION)",
-        hint: "Kêu gọi bình luận và đăng ký kênh",
+        badge: "CALL TO ACTION",
+        hint: "Warm, energetic sign-off",
         filename: "geo-ghost-border_a4.mp3",
         text: "Drop your answer in the comments below and follow for more!",
       },
@@ -101,80 +101,80 @@ const TEMPLATES = {
       {
         key: "q0",
         type: "q",
-        badge: "CÂU HỎI Q0 (SRI LANKA)",
-        hint: "Đọc nhịp nhàng chuẩn bị đếm ngược",
+        badge: "QUESTION 1 (SRI LANKA)",
+        hint: "Rhythmic delivery leading into countdown",
         filename: "geo-zoom-out-country_q0.mp3",
         text: "Name this country in,",
       },
       {
         key: "a0",
         type: "a",
-        badge: "ĐÁP ÁN A0 (SRI LANKA)",
-        hint: "Tươi vui, thi vị",
+        badge: "ANSWER 1 (SRI LANKA)",
+        hint: "Lively, lyrical reveal",
         filename: "geo-zoom-out-country_a0.mp3",
         text: "Sri Lanka, the pearl of the Indian Ocean.",
       },
       {
         key: "q1",
         type: "q",
-        badge: "CÂU HỎI Q1 (ICELAND)",
-        hint: "Nhịp điệu dứt khoát",
+        badge: "QUESTION 2 (ICELAND)",
+        hint: "Crisp and punchy",
         filename: "geo-zoom-out-country_q1.mp3",
         text: "Name this nation in,",
       },
       {
         key: "a1",
         type: "a",
-        badge: "ĐÁP ÁN A1 (ICELAND)",
-        hint: "Bí ẩn, xa xôi",
+        badge: "ANSWER 2 (ICELAND)",
+        hint: "Mysterious, dramatic tone",
         filename: "geo-zoom-out-country_a1.mp3",
         text: "Iceland, isolated in the North Atlantic.",
       },
       {
         key: "q2",
         type: "q",
-        badge: "CÂU HỎI Q2 (OMAN)",
-        hint: "Hào hứng",
+        badge: "QUESTION 3 (OMAN)",
+        hint: "Upbeat and energetic",
         filename: "geo-zoom-out-country_q2.mp3",
         text: "Spot this country in,",
       },
       {
         key: "a2",
         type: "a",
-        badge: "ĐÁP ÁN A2 (OMAN)",
-        hint: "Mạnh mẽ",
+        badge: "ANSWER 3 (OMAN)",
+        hint: "Bold and strong",
         filename: "geo-zoom-out-country_a2.mp3",
         text: "Oman, guarding the Arabian Sea.",
       },
       {
         key: "q3",
         type: "q",
-        badge: "CÂU HỎI Q3 (PARAGUAY)",
-        hint: "Nhấn mạnh đặc điểm nội lục",
+        badge: "QUESTION 4 (PARAGUAY)",
+        hint: "Clear emphasis on landlocked hint",
         filename: "geo-zoom-out-country_q3.mp3",
         text: "Name this landlocked country in,",
       },
       {
         key: "a3",
         type: "a",
-        badge: "ĐÁP ÁN A3 (PARAGUAY)",
-        hint: "Ấm áp",
+        badge: "ANSWER 4 (PARAGUAY)",
+        hint: "Warm and friendly",
         filename: "geo-zoom-out-country_a3.mp3",
         text: "Paraguay, right in the heart of South America.",
       },
       {
         key: "q4",
         type: "q",
-        badge: "CÂU HỎI Q4 (ERITREA - MYSTERY)",
-        hint: "Tạo sự kịch tính cho vòng cuối",
+        badge: "QUESTION 5 (ERITREA - MYSTERY)",
+        hint: "Dramatic mystery countdown",
         filename: "geo-zoom-out-country_q4.mp3",
         text: "Final mystery round, name this country in,",
       },
       {
         key: "a4",
         type: "a",
-        badge: "KẾT VIDEO A4 (CALL TO ACTION)",
-        hint: "Thúc đẩy người xem comment",
+        badge: "CALL TO ACTION",
+        hint: "Encourage viewers to comment",
         filename: "geo-zoom-out-country_a4.mp3",
         text: "Drop your answer in the comments below!",
       },
@@ -187,112 +187,112 @@ const TEMPLATES = {
       {
         key: "q0",
         type: "q",
-        badge: "CÂU HỎI Q0 (DOMINICA)",
-        hint: "Miêu tả hình ảnh sinh động",
+        badge: "QUESTION 1 (DOMINICA)",
+        hint: "Vivid, visual delivery",
         filename: "geo-flag-puzzle_q0.mp3",
         text: "Triple colored stripes across a rich green field. Can you identify this island?",
       },
       {
         key: "a0",
         type: "a",
-        badge: "ĐÁP ÁN A0 (DOMINICA)",
-        hint: "Giọng hào hứng",
+        badge: "ANSWER 1 (DOMINICA)",
+        hint: "Enthusiastic and clear",
         filename: "geo-flag-puzzle_a0.mp3",
         text: "Dominica, known for the rare purple Sisserou parrot.",
       },
       {
         key: "q1",
         type: "q",
-        badge: "CÂU HỎI Q1 (KAZAKHSTAN)",
-        hint: "Hùng tráng",
+        badge: "QUESTION 2 (KAZAKHSTAN)",
+        hint: "Grand and majestic",
         filename: "geo-flag-puzzle_q1.mp3",
         text: "A distinctive gold ornamental pattern against sky blue. Name this giant nation!",
       },
       {
         key: "a1",
         type: "a",
-        badge: "ĐÁP ÁN A1 (KAZAKHSTAN)",
-        hint: "Tự hào",
+        badge: "ANSWER 2 (KAZAKHSTAN)",
+        hint: "Proud and inspiring",
         filename: "geo-flag-puzzle_a1.mp3",
         text: "Kazakhstan, with the soaring steppe eagle beneath the sun.",
       },
       {
         key: "q2",
         type: "q",
-        badge: "CÂU HỎI Q2 (SAINT VINCENT)",
-        hint: "Tò mò",
+        badge: "QUESTION 3 (SAINT VINCENT)",
+        hint: "Curious and lighthearted",
         filename: "geo-flag-puzzle_q2.mp3",
         text: "Green, yellow, and blue stripes with a white diamond. Which country is this?",
       },
       {
         key: "a2",
         type: "a",
-        badge: "ĐÁP ÁN A2 (SAINT VINCENT)",
-        hint: "Nhẹ nhàng",
+        badge: "ANSWER 3 (SAINT VINCENT)",
+        hint: "Smooth and relaxed",
         filename: "geo-flag-puzzle_a2.mp3",
         text: "Saint Vincent and the Grenadines, nestled in the Caribbean.",
       },
       {
         key: "q3",
         type: "q",
-        badge: "CÂU HỎI Q3 (WALES)",
-        hint: "Mạnh mẽ, ấn tượng với biểu tượng rồng",
+        badge: "QUESTION 4 (WALES)",
+        hint: "Bold delivery highlighting the dragon",
         filename: "geo-flag-puzzle_q3.mp3",
         text: "A fierce red dragon emblazoned on green and white. Spot this nation!",
       },
       {
         key: "a3",
         type: "a",
-        badge: "ĐÁP ÁN A3 (WALES)",
-        hint: "Kỳ bí",
+        badge: "ANSWER 4 (WALES)",
+        hint: "Legendary and proud",
         filename: "geo-flag-puzzle_a3.mp3",
         text: "Wales, famous for its ancient castles and rugged coastline.",
       },
       {
         key: "q4",
         type: "q",
-        badge: "CÂU HỎI Q4 (MYSTERY ROUND)",
-        hint: "Thách đố",
+        badge: "QUESTION 5 (MYSTERY FLAG)",
+        hint: "Challenging mystery hook",
         filename: "geo-flag-puzzle_q4.mp3",
         text: "Mystery flag round! Can you identify this national symbol?",
       },
       {
         key: "a4",
         type: "a",
-        badge: "KẾT VIDEO A4 (CALL TO ACTION)",
-        hint: "Kêu gọi tương tác",
+        badge: "CALL TO ACTION",
+        hint: "Spur comments and engagement",
         filename: "geo-flag-puzzle_a4.mp3",
         text: "Drop your guess in the comments below!",
       },
     ],
   },
   "custom": {
-    name: "Kịch bản tự do (Custom)",
+    name: "Custom Script",
     prefix: "custom-voice",
     items: [
       {
         key: "q0",
         type: "q",
-        badge: "ĐOẠN 1",
-        hint: "Thu âm câu đầu tiên",
+        badge: "LINE 1",
+        hint: "Record your opening line",
         filename: "custom-voice_01.mp3",
-        text: "Nhập hoặc đọc đoạn văn đầu tiên của bạn tại đây...",
+        text: "Type or read your first line here...",
       },
       {
         key: "q1",
         type: "q",
-        badge: "ĐOẠN 2",
-        hint: "Thu âm câu thứ hai",
+        badge: "LINE 2",
+        hint: "Record your second line",
         filename: "custom-voice_02.mp3",
-        text: "Nhập hoặc đọc đoạn văn thứ hai của bạn tại đây...",
+        text: "Type or read your second line here...",
       },
       {
         key: "q2",
         type: "q",
-        badge: "ĐOẠN 3",
-        hint: "Thu âm câu thứ ba",
+        badge: "LINE 3",
+        hint: "Record your third line",
         filename: "custom-voice_03.mp3",
-        text: "Nhập hoặc đọc đoạn văn thứ ba của bạn tại đây...",
+        text: "Type or read your third line here...",
       },
     ],
   },
@@ -492,7 +492,7 @@ async function startRecording() {
     drawWaveform();
   } catch (err) {
     console.error("Mic Access Error:", err);
-    showToast("Không thể mở Micro. Vui lòng cấp quyền micro!", "alert-circle");
+    showToast("Microphone access denied. Please grant mic permissions!", "alert-circle");
   }
 }
 
@@ -546,7 +546,7 @@ async function stopRecording() {
   await saveClip(currentTemplateId, currentItem.key, audioBlob, durationSec);
   cachedClips[currentItem.key] = { blob: audioBlob, duration: durationSec };
 
-  showToast(`Đã lưu "${currentItem.filename}" (${durationSec.toFixed(1)}s)!`);
+  showToast(`Saved "${currentItem.filename}" (${durationSec.toFixed(1)}s)!`);
   updateUI();
 }
 
@@ -686,12 +686,12 @@ function updateUI() {
 
   // Header & Progress
   templateNameDisplay.textContent = tmpl.name;
-  progressText.textContent = `Đã thu: ${recordedCount} / ${totalCount} câu`;
+  progressText.textContent = `Recorded: ${recordedCount} / ${totalCount} lines`;
   const pct = Math.round((recordedCount / totalCount) * 100);
   progressFill.style.width = `${pct}%`;
 
   // Prompter Step & Badge
-  stepIndicator.textContent = `Câu ${currentIndex + 1} / ${totalCount}`;
+  stepIndicator.textContent = `Line ${currentIndex + 1} of ${totalCount}`;
   prevBtn.disabled = currentIndex === 0;
   nextBtn.disabled = currentIndex === totalCount - 1;
 
@@ -715,10 +715,10 @@ function updateUI() {
   // Download Zip Button
   if (recordedCount > 0) {
     downloadZipBtn.disabled = false;
-    downloadZipBtnText.textContent = `Tải về trọn bộ ZIP (${recordedCount} file .mp3)`;
+    downloadZipBtnText.textContent = `Download Voice Pack (${recordedCount} clips .zip)`;
   } else {
     downloadZipBtn.disabled = true;
-    downloadZipBtnText.textContent = "Tải về trọn bộ ZIP (.zip)";
+    downloadZipBtnText.textContent = "Download Voice Pack (.zip)";
   }
 
   // Render List View if open
@@ -752,7 +752,7 @@ function renderListView() {
       <div class="clip-actions">
         ${
           isRecorded
-            ? `<button class="icon-btn" title="Nghe lại" onclick="playClip('${it.key}')">
+            ? `<button class="icon-btn" title="Listen back" onclick="playClip('${it.key}')">
                 <i data-lucide="play" style="width: 15px; height: 15px;"></i>
                </button>`
             : ""
@@ -798,11 +798,11 @@ async function exportZip() {
   const recordedItems = tmpl.items.filter((it) => cachedClips[it.key]);
 
   if (recordedItems.length === 0) {
-    showToast("Chưa có đoạn thu âm nào để tải!", "alert-circle");
+    showToast("No recordings available to download yet!", "alert-circle");
     return;
   }
 
-  showToast("Đang đóng gói file ZIP...", "loader");
+  showToast("Packaging ZIP voice archive...", "loader");
   const zip = new JSZip();
 
   // Add all audio files
@@ -817,7 +817,7 @@ async function exportZip() {
     prefix: tmpl.prefix,
     exportedAt: new Date().toISOString(),
     totalClips: recordedItems.length,
-    instructions: "Giải nén các file .mp3 này vào thư mục: Geo Trivia X/remotion/public/audio/tts/",
+    instructions: "Extract these .mp3 files directly into: Geo Trivia X/remotion/public/audio/tts/",
     clips: recordedItems.map((it) => ({
       key: it.key,
       filename: it.filename,
@@ -837,7 +837,7 @@ async function exportZip() {
   a.remove();
   URL.revokeObjectURL(downloadUrl);
 
-  showToast(`Đã tải về gói ZIP ${recordedItems.length} file!`, "check-circle-2");
+  showToast(`Voice pack downloaded (${recordedItems.length} clips)!`, "check-circle-2");
 }
 
 // ─── Event Listeners ───
@@ -876,7 +876,7 @@ retakeBtn.addEventListener("click", async () => {
   const item = getCurrentItem();
   await deleteClip(currentTemplateId, item.key);
   delete cachedClips[item.key];
-  showToast(`Đã xóa clip cũ của ${item.badge}. Sẵn sàng thu lại!`);
+  showToast(`Cleared recording for ${item.badge}. Ready to re-record!`);
   updateUI();
 });
 
@@ -896,15 +896,15 @@ downloadZipBtn.addEventListener("click", exportZip);
 
 clearAllBtn.addEventListener("click", async () => {
   const tmpl = getCurrentTemplate();
-  if (confirm(`Bạn có chắc muốn xóa TẤT CẢ các đoạn thu âm của "${tmpl.name}"?`)) {
+  if (confirm(`Are you sure you want to reset ALL recordings for "${tmpl.name}"?`)) {
     await clearTemplateClips(currentTemplateId);
     cachedClips = {};
-    showToast(`Đã dọn sạch các file của "${tmpl.name}"`);
+    showToast(`All recordings cleared for "${tmpl.name}"`);
     updateUI();
   }
 });
 
-// Spacebar Shortcut
+// Spacebar & Arrow Shortcuts
 document.addEventListener("keydown", (e) => {
   if (e.code === "Space" && e.target.tagName !== "INPUT" && e.target.tagName !== "TEXTAREA") {
     e.preventDefault();

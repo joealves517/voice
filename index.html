@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Geo Voice Studio - Teleprompter & Voice Recorder</title>
-  <meta name="description" content="Website thu âm giọng đọc teleprompter cho Geo Trivia X, tự động chia đoạn và xuất gói ZIP chuẩn Remotion." />
+  <title>Voice Studio - Teleprompter & Voice Recorder</title>
+  <meta name="description" content="Teleprompter voice recorder for Geo Trivia X video dubbing. Step-by-step recording and one-click ZIP voice pack export." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,20 +23,20 @@
           <i data-lucide="mic" style="color: white; width: 22px; height: 22px;"></i>
         </div>
         <div>
-          <span class="brand-title">Geo Voice Studio</span>
-          <span class="brand-badge">Remotion Sync</span>
+          <span class="brand-title">Voice Studio</span>
+          <span class="brand-badge">Teleprompter</span>
         </div>
       </div>
 
       <div class="header-actions">
         <select id="templateSelector" class="template-select">
-          <option value="geo-ghost-border">Geo Ghost Border (11 câu)</option>
-          <option value="geo-zoom-out-country">Geo Zoom Out Country (10 câu)</option>
-          <option value="geo-flag-puzzle">Geo Flag Puzzle (10 câu)</option>
-          <option value="custom">Kịch bản tự do (Custom)</option>
+          <option value="geo-ghost-border">Geo Ghost Border (11 lines)</option>
+          <option value="geo-zoom-out-country">Geo Zoom Out Country (10 lines)</option>
+          <option value="geo-flag-puzzle">Geo Flag Puzzle (10 lines)</option>
+          <option value="custom">Custom Script</option>
         </select>
 
-        <button id="viewToggleBtn" class="view-toggle-btn" title="Chuyển chế độ xem">
+        <button id="viewToggleBtn" class="view-toggle-btn" title="Toggle List / Prompter view">
           <i id="viewToggleIcon" data-lucide="list" style="width: 18px; height: 18px;"></i>
         </button>
       </div>
@@ -51,7 +51,7 @@
         <span id="templateNameDisplay">Geo Ghost Border</span>
         <div class="progress-stats">
           <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
-          <span id="progressText">Đã thu: 0 / 11 câu</span>
+          <span id="progressText">Recorded: 0 / 11 lines</span>
         </div>
       </div>
       <div class="progress-track">
@@ -64,11 +64,11 @@
       <div class="prompter-nav">
         <button id="prevBtn" class="nav-btn">
           <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
-          <span>Câu trước</span>
+          <span>Previous</span>
         </button>
-        <span id="stepIndicator" class="step-indicator">Câu 1 / 11</span>
+        <span id="stepIndicator" class="step-indicator">Line 1 of 11</span>
         <button id="nextBtn" class="nav-btn">
-          <span>Câu sau</span>
+          <span>Next</span>
           <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
         </button>
       </div>
@@ -76,10 +76,10 @@
       <!-- Prompter Card -->
       <div class="teleprompter-card">
         <div class="prompter-badge-row">
-          <span id="prompterBadge" class="prompter-badge q">CÂU HỎI Q0</span>
+          <span id="prompterBadge" class="prompter-badge q">QUESTION Q0</span>
           <span id="voiceHint" class="voice-hint">
             <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
-            <span id="voiceHintText">Đọc tò mò, thách đố người xem</span>
+            <span id="voiceHintText">Curious, challenging inflection</span>
           </span>
         </div>
 
@@ -88,7 +88,7 @@
         </div>
 
         <div id="filenameHint" style="font-size: 0.72rem; color: var(--text-muted); text-align: center;">
-          File đích: <code id="filenameCode" style="color: var(--accent-blue);">geo-ghost-border_q0.mp3</code>
+          Output: <code id="filenameCode" style="color: var(--accent-blue);">geo-ghost-border_q0.mp3</code>
         </div>
       </div>
 
@@ -98,7 +98,7 @@
         <div id="timerDisplay" class="timer-display">00:00.0</div>
 
         <div class="record-action-group">
-          <button id="recordBtn" class="record-btn" title="Bắt đầu / Dừng thu âm (Space)">
+          <button id="recordBtn" class="record-btn" title="Start / Stop recording (Space)">
             <i id="recordBtnIcon" data-lucide="mic" class="record-btn-icon"></i>
           </button>
         </div>
@@ -107,10 +107,10 @@
         <div id="audioPreviewCard" class="audio-preview-card" style="display: none;">
           <audio id="audioPreviewPlayer" controls></audio>
           <div class="clip-actions">
-            <button id="retakeBtn" class="icon-btn danger" title="Thu lại câu này">
+            <button id="retakeBtn" class="icon-btn danger" title="Re-record this line">
               <i data-lucide="rotate-ccw" style="width: 16px; height: 16px;"></i>
             </button>
-            <button id="downloadSingleBtn" class="icon-btn" title="Tải riêng file này">
+            <button id="downloadSingleBtn" class="icon-btn" title="Download this clip (.mp3)">
               <i data-lucide="download" style="width: 16px; height: 16px;"></i>
             </button>
           </div>
@@ -129,10 +129,10 @@
     <div class="bottom-container">
       <button id="downloadZipBtn" class="download-zip-btn" disabled>
         <i data-lucide="archive" style="width: 18px; height: 18px;"></i>
-        <span id="downloadZipBtnText">Tải về trọn bộ ZIP (.zip)</span>
+        <span id="downloadZipBtnText">Download Voice Pack (.zip)</span>
       </button>
 
-      <button id="clearAllBtn" class="clear-all-btn" title="Xóa dữ liệu thu âm của template này">
+      <button id="clearAllBtn" class="clear-all-btn" title="Reset recordings for this template">
         <i data-lucide="trash-2" style="width: 16px; height: 16px;"></i>
       </button>
     </div>
