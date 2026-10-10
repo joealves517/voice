@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Geo Voice Studio - Teleprompter & Voice Recorder</title>
+  <meta name="description" content="Website thu âm giọng đọc teleprompter cho Geo Trivia X, tự động chia đoạn và xuất gói ZIP chuẩn Remotion." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- CDNs for JSZip, lamejs, Lucide -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i data-lucide="mic" style="color: white; width: 22px; height: 22px;"></i>
+        </div>
+        <div>
+          <span class="brand-title">Geo Voice Studio</span>
+          <span class="brand-badge">Remotion Sync</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <select id="templateSelector" class="template-select">
+          <option value="geo-ghost-border">Geo Ghost Border (11 câu)</option>
+          <option value="geo-zoom-out-country">Geo Zoom Out Country (10 câu)</option>
+          <option value="geo-flag-puzzle">Geo Flag Puzzle (10 câu)</option>
+          <option value="custom">Kịch bản tự do (Custom)</option>
+        </select>
+
+        <button id="viewToggleBtn" class="view-toggle-btn" title="Chuyển chế độ xem">
+          <i id="viewToggleIcon" data-lucide="list" style="width: 18px; height: 18px;"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Progress Indicator -->
+    <div class="progress-container">
+      <div class="progress-header">
+        <span id="templateNameDisplay">Geo Ghost Border</span>
+        <div class="progress-stats">
+          <i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i>
+          <span id="progressText">Đã thu: 0 / 11 câu</span>
+        </div>
+      </div>
+      <div class="progress-track">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Teleprompter View -->
+    <div id="prompterView" class="prompter-container">
+      <div class="prompter-nav">
+        <button id="prevBtn" class="nav-btn">
+          <i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i>
+          <span>Câu trước</span>
+        </button>
+        <span id="stepIndicator" class="step-indicator">Câu 1 / 11</span>
+        <button id="nextBtn" class="nav-btn">
+          <span>Câu sau</span>
+          <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+        </button>
+      </div>
+
+      <!-- Prompter Card -->
+      <div class="teleprompter-card">
+        <div class="prompter-badge-row">
+          <span id="prompterBadge" class="prompter-badge q">CÂU HỎI Q0</span>
+          <span id="voiceHint" class="voice-hint">
+            <i data-lucide="sparkles" style="width: 14px; height: 14px;"></i>
+            <span id="voiceHintText">Đọc tò mò, thách đố người xem</span>
+          </span>
+        </div>
+
+        <div id="prompterText" class="prompter-text">
+          Guess the country just from its border shape, first round.
+        </div>
+
+        <div id="filenameHint" style="font-size: 0.72rem; color: var(--text-muted); text-align: center;">
+          File đích: <code id="filenameCode" style="color: var(--accent-blue);">geo-ghost-border_q0.mp3</code>
+        </div>
+      </div>
+
+      <!-- Recording Station -->
+      <div class="recording-station">
+        <canvas id="waveformCanvas" class="waveform-canvas"></canvas>
+        <div id="timerDisplay" class="timer-display">00:00.0</div>
+
+        <div class="record-action-group">
+          <button id="recordBtn" class="record-btn" title="Bắt đầu / Dừng thu âm (Space)">
+            <i id="recordBtnIcon" data-lucide="mic" class="record-btn-icon"></i>
+          </button>
+        </div>
+
+        <!-- Audio Preview (When recorded) -->
+        <div id="audioPreviewCard" class="audio-preview-card" style="display: none;">
+          <audio id="audioPreviewPlayer" controls></audio>
+          <div class="clip-actions">
+            <button id="retakeBtn" class="icon-btn danger" title="Thu lại câu này">
+              <i data-lucide="rotate-ccw" style="width: 16px; height: 16px;"></i>
+            </button>
+            <button id="downloadSingleBtn" class="icon-btn" title="Tải riêng file này">
+              <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- List Overview View (Hidden by default) -->
+    <div id="listView" class="list-container" style="display: none;">
+      <!-- Populated dynamically via JS -->
+    </div>
+  </main>
+
+  <!-- Bottom Sticky Action Bar -->
+  <footer class="bottom-bar">
+    <div class="bottom-container">
+      <button id="downloadZipBtn" class="download-zip-btn" disabled>
+        <i data-lucide="archive" style="width: 18px; height: 18px;"></i>
+        <span id="downloadZipBtnText">Tải về trọn bộ ZIP (.zip)</span>
+      </button>
+
+      <button id="clearAllBtn" class="clear-all-btn" title="Xóa dữ liệu thu âm của template này">
+        <i data-lucide="trash-2" style="width: 16px; height: 16px;"></i>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+</html>
